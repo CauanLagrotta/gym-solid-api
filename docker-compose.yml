@@ -1,0 +1,18 @@
+services:
+  database:
+    image: postgres
+    container_name: api-solid-pg
+    ports:
+      - 5432:5432
+
+    environment:
+      - POSTGRES_USERNAME=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DATABASE=api-solid
+
+    volumes:
+      - api-solid-pg:/var/lib/postgresql/data
+
+volumes:
+  api-solid-pg:
+    name: api-solid-pg

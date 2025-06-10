@@ -1,0 +1,36 @@
+{
+  "name": "gym-solid-api",
+  "version": "1.0.0",
+  "description": "- [ ] Deve ser possivel se cadastrar\r - [ ] Deve ser possivel se autenticar\r - [ ] Deve ser possivel obter o perfil do usuario logado\r - [ ] Deve ser possivel obter o numero de check-ins realizados pelo usuario logado\r - [ ] Deve ser possivel o usuario obter seu historico de check-ins\r - [ ] Deve ser possivel o usuario buscar academias proximas\r - [ ] Deve ser possivel o usuario buscar academias pelo nome\r - [ ] Deve ser possivel realizar check-in em uma academia\r - [ ] Deve ser possivel validar o check-in de um usuario\r - [ ] Deve ser possivel cadastrar uma academia",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CauanLagrotta/gym-solid-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CauanLagrotta/gym-solid-api/issues"
+  },
+  "homepage": "https://github.com/CauanLagrotta/gym-solid-api#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "prisma": "6.9.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "6.9.0",
+    "dotenv": "16.5.0",
+    "fastify": "^5.3.3",
+    "zod": "3.25.57"
+  }
+}
