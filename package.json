@@ -7,7 +7,9 @@
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
-    "test": "vitest"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/CauanLagrotta/gym-solid-api#readme",
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "@vitest/coverage-v8": "3.2.3",
     "prisma": "6.9.0",
     "tsup": "^8.5.0",
     "tsx": "^4.19.4",
