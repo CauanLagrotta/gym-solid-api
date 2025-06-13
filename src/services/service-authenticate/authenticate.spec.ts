@@ -31,7 +31,7 @@ describe("Auth Service", () => {
   it("should not be able to authenticate with wrong email", async () => {
     // running the test without create an user
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         email: "wrongemail@example.com",
         password: "123456",
@@ -46,7 +46,7 @@ describe("Auth Service", () => {
       password_hash: await hash("123456", 6),
     });
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         email: "johndoe@example.com",
         password: "wrong-password",

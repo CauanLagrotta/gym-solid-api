@@ -30,7 +30,7 @@ describe("Get User Service", () => {
   it("should not be able to get user profile with wrong id", async () => {
     // running the test without create an user
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         userId: "non-existing-id",
       })
